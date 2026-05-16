@@ -111,7 +111,7 @@ section h2 {
     background-color: rgb(0, 0, 0, 0.1);
     font-size: 1.5rem;
     font-weight: 450;
-    color: var(--primary-color);
+    color: var(--primary-accent);
     text-align: center;
 }
 
@@ -175,12 +175,16 @@ section p {
     margin: .75rem 1rem;
     font-size: 1.25rem;
     font-weight: 300;
-    color: var(--primary-color);
+    color: var(--primary-accent);
 }
 
 #card-grid .completed {
     background-color: white;
     border: solid 1px var(--primary-color);
+}
+
+#card-grid .completed h3 {
+    color: var(--primary-color);
 }
 
 .certificates p {
@@ -224,4 +228,8 @@ footer {
 .social img {
     width: 22px;
     height: auto;
+}
+
+footer p {
+    color: var(--primary-accent);
 }

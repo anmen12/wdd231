@@ -2,4 +2,4 @@ const year = document.querySelector("#currentyear");
 const today = new Date();
 
 year.innerHTML = `<span>${today.getFullYear()}</span>`;
-document.getElementById("lastModified").innerHTML = `<span style="color:black">Last Modification: ${document.lastModified}</span>`;
+document.getElementById("lastModified").innerHTML = `<span style="color:#2b4d37">Last Modification: ${document.lastModified}</span>`;
