@@ -1,0 +1,227 @@
+/*------------- Variables -------------*/
+:root {
+    --primary-color: #3e6e4f;
+    --primary-accent: #2b4d37;
+    --secondary-color: #ffd0c2;
+    --secondary-accent: #ffa589;
+}
+
+/*------------- Site Wide -------------*/
+* {
+    font-family: "Tektur", sans-serif;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    min-width: 320px;
+    max-width: 900px;
+}
+
+/*------------- Header -------------*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 1rem;
+    border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+    gap: 1rem;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.125rem;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+/*------------- Menu Button --------------*/
+.menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu::after {
+    content: "\2630";
+}
+.menu.show::after {
+    content: "\00D7";
+}
+
+/*------------- Navigation --------------*/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+}
+
+.navigation li.current {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+/*------------- Main --------------*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/*------------- Sections --------------*/
+
+section {
+    margin: 0 1rem 1rem 1rem;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+section h2 {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section p {
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+/*------------- Photo Section --------------*/
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    width: 200px;
+    box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+    margin: 0 1rem 1rem 1rem;
+}
+
+/*------------- Certificates Section --------------*/
+.certificates .certificate-buttons {
+    display: flex;
+    justify-content:space-between;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.certificates div button {
+    width: 30%;
+    padding: .5rem;
+    background-color: white;
+    border: solid 1px rgb(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--primary-color);
+}
+.certificates div button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.certificates div .selected {
+    background-color: transparent;
+}
+
+#card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#card-grid section {
+    text-align: center;
+}
+
+#card-grid section h3 {
+    margin: .75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+#card-grid .completed {
+    background-color: white;
+    border: solid 1px var(--primary-color);
+}
+
+.certificates p {
+    text-align: center;
+}
+
+#credits {
+    margin-top: 0;
+}
+
+.credit-value {
+    font-weight: 600;
+}
+
+/*------------- Footer --------------*/
+footer {
+    background-color: rgb(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px rgb(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+.social a:hover {
+    background-color: var(--secondary-color);
+}
+
+.social img {
+    width: 22px;
+    height: auto;
+}

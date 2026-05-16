@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title & description-->
+    <title>WDD 231 - Web Frontend Developement - Bryson Gowans</title>
+    <meta name="description" content="WDD 231 Web Fronend Developement">
+    <meta name="author" content="Bryson Gowans">
+    <!--styling-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Bryson Gowans</span>
+        <button id="menu-button" class="menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Bryson, and I am from Utah, United States of America. I enjoy reading books, particularly fantasy books. I also enjoy designing 3d models and printing them using 3d printers. My favorite season is winter; I love the snow.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Student Photo" loading="lazy">
+        </section>
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+            <div class="certificate-buttons">
+                <button id="all" class="selected">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="card-grid"></div>
+            <p id="credits"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="images/microsoft-teams.svg"
+                    alt="Microsoft Temas"></a>
+            <a href="https://discord.com"><img src="images/discord.svg" alt="Discord"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
