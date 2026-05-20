@@ -131,7 +131,7 @@ section p {
 
 .photo img {
     width: 200px;
-    height: auto;
+    height: 200px;
     box-shadow: 0 0 10px 3px #bbbbbb;
     margin: 0 1rem 1rem 1rem;
 }
