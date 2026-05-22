@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #bfd2c5;
+    --primary-accent: #3c4640;
+}
+
+/*------------- Site Wide -------------*/
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*------------- Header -------------*/
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 550;
+    color: var(--primary-accent);
+}
+
+/*------------- Cards -------------*/
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+#cards section {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: solid 1px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#cards section h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 550;
+    color: var(--primary-accent);
+}
+
+#cards section p {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--primary-accent);
+}
+
+#cards section img {
+    width: 100%;
+    border: solid 1px var(--primary-accent);
+    box-shadow: 0 0 3px 1px rgb(0, 0, 0, 0.5);
+}
+
+/*------------- Footer -------------*/
+footer {
+    background-color: var(--primary-color);
+    margin: 1rem auto 0 auto;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--primary-accent);
+    text-align: center;
+}

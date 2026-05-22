@@ -1,0 +1,13 @@
+{
+    "family_name": "Name",
+    "move_in_date": "2026-05-20",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Name",
+            "gender": "Male",
+            "birthdate": "2026-05-20"
+        }
+    ]
+}

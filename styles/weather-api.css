@@ -1,0 +1,45 @@
+/*------------- Site Wide -------------*/
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/*------------- Header -------------*/
+header span {
+    font-size: 2rem;
+    color: #111;
+}
+
+/*------------- Main -------------*/
+main {
+    width: 50%;
+    padding: .3rem;
+    border: solid 10px #ddd;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+main p {
+    font-size: 1rem;
+    color: #111;
+    margin: .3rem 0;
+}
+
+main figure figcaption {
+    text-transform: capitalize;
+    color: #111;
+    margin: .3rem 0;
+}
+
+main #current-temp {
+    font-size: 1.5rem;
+    color: #333;
+    margin: .3rem 0;
+}
+
+/*------------- Footer -------------*/
+footer {
+    margin: 1.33rem auto;
+}
