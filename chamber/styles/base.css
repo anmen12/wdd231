@@ -1,10 +1,9 @@
 /*------------- Variables -------------*/
 :root {
     --background-color: #eeeeee;
-    --primary-color: #009fdf;
+    --primary-color: #0099d6;
     --primary-accent: #00668f;
-    --secondary-color: #4900a9;
-    --secondary-accent: #310071;
+    --secondary-color: #310071;
 }
 
 /*------------- Site Wide -------------*/
@@ -221,7 +220,7 @@ footer div {
     width: 280px;
 }
 
-footer div h3 {
+footer div h1 {
     font-size: 1rem;
     font-weight: 600;
 }
