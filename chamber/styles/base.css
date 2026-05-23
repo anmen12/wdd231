@@ -32,8 +32,9 @@ header img {
     align-self: center;
 }
 
-header h1 {
+header span {
     margin-left: 1rem;
+    align-self: center;
     font-size: 2rem;
     font-weight: 600;
     color: white;
@@ -93,7 +94,7 @@ nav {
 }
 
 /*------------- Main -------------*/
-main h2 {
+main h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-accent);
@@ -133,6 +134,8 @@ main div .selected {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
 }
 .grid section {
     display: flex;
@@ -141,18 +144,18 @@ main div .selected {
     background-color: var(--background-color);
     border: solid 3px var(--primary-color);
     border-radius: 20px;
-    margin: 1rem;
     text-align: center;
 }
 
 .grid section img {
     max-width: 80%;
     width: fit-content;
-    height: 80px;
+    max-height: 80px;
+    height: 100%;
     margin: 1rem;
 }
 
-.grid section h3 {
+.grid section h2 {
     margin: 1rem;
     font-size: 2rem;
     font-weight: 600;
@@ -184,7 +187,7 @@ main div .selected {
     display: none;
 }
 
-.list section h3 {
+.list section h2 {
     margin: 1rem;
     font-size: 1rem;
     font-weight: 600;
