@@ -44,7 +44,6 @@ const displayBusinesses = (businesses) => {
 
         image.setAttribute("src", business.image);
         image.setAttribute("alt", business.name);
-        image.setAttribute("loading", "lazy");
         image.setAttribute("width", 100);
         image.setAttribute("height", 100);
 
