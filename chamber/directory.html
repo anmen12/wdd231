@@ -19,51 +19,61 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/businesses.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="images/logo.svg" alt="Logo" width="" height="">
+        <h1>Bluffdale Chamber of Commerce</h1>
+        <button id="menu-button" class="menu" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="chamber/index.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
     <main>
-        <Section>
-            <h2>Site Name</h2>
-            <p>Bluffdale Chamber of Commerce</p>
-        </Section>
-        <Section>
-            <h2>Site Purpose</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Target Market</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Site Goals</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>User Personas</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Scenarios</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>SEO Plan</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Design Brief</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Site Map</h2>
-            <p>...</p>
-        </Section>
-        <Section>
-            <h2>Wireframes</h2>
-            <p>...</p>
-        </Section>
+        <h2>Business Directory</h2>
+        <div class="view-buttons">
+            <button id="grid-view" class="selected">
+                <img src="images/grid.svg" alt="Grid View">
+            </button>
+            <button id="list-view">
+                <img src="images/list.svg" alt="List View">
+            </button>
+        </div>
+        <div id="businesses" class="grid"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <h3>Bluffdale Chamber of Commerce</h3>
+            <p>Bluffdale cc Street</p>
+            <p>Bluffdale, Mali 999</p>
+            <p>info@bluffdalecc.org</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="images/microsoft-teams.svg" alt="Microsoft Temas"></a>
+            <a href="https://discord.com"><img src="images/discord.svg" alt="Discord"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Bryson Gowans</p>
+            <p>&copy;<span id="currentyear"></span> Bluffdale Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>

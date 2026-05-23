@@ -1,0 +1,30 @@
+@media only screen and (min-width: 38rem) {
+    header {
+        grid-template-columns: 80px auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer div {
+        width: auto;
+    }
+
+    footer .social {
+        width: 320px;
+    }
+}

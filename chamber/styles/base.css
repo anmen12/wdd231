@@ -1,0 +1,246 @@
+/*------------- Variables -------------*/
+:root {
+    --background-color: #eeeeee;
+    --primary-color: #009fdf;
+    --primary-accent: #00668f;
+    --secondary-color: #4900a9;
+    --secondary-accent: #310071;
+}
+
+/*------------- Site Wide -------------*/
+* {
+    font-family: "Grenze", serif;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/*------------- Header -------------*/
+header {
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    padding: .5rem;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+/*------------- Menu Button --------------*/
+.menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu::after {
+    content: "\2630";
+}
+.menu.show::after {
+    content: "\00D7";
+}
+
+/*------------- Nav -------------*/
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: solid 3px var(--primary-accent);
+    border-bottom: solid 3px var(--primary-accent);
+    text-align: center;
+}
+
+.navigation li.current {
+    background-color: var(--primary-accent);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+}
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+/*------------- Main -------------*/
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+    text-align: center;
+}
+
+.view-buttons {
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.view-buttons button {
+    width: 60px;
+    height: 60px;
+    margin: 1rem auto;
+    padding: .5rem;
+    border: solid 3px var(--primary-color);
+    border-radius: 1rem;
+}
+
+.view-buttons button img {
+    width: 100%;
+}
+
+/*------------- Buttons -------------*/
+main div button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+main div .selected {
+    background-color: var(--primary-accent);
+}
+
+/*------------- Grid -------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    border: solid 3px var(--primary-color);
+    border-radius: 20px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.grid section img {
+    max-width: 80%;
+    width: fit-content;
+    height: 80px;
+    margin: 1rem;
+}
+
+.grid section h3 {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+}
+
+.grid section p,
+.grid section a {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary-accent);
+}
+
+/*------------- List -------------*/
+
+.list {
+    margin-bottom: 1rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 5fr;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+}
+
+.list section p,
+.list section a {
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-accent);
+}
+
+.list section:nth-child(odd) {
+	background-color: var(--background-color);
+}
+
+/*------------- Footer -------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-accent);
+    color: #ffffff;
+}
+
+footer div {
+    margin: 0 1rem;
+    width: 280px;
+}
+
+footer div h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer div p {
+    font-weight: 300;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 0;
+}
+
+.social img {
+    width: 60px;
+    padding: .5rem;
+    background-color: var(--background-color);
+    border: solid 3px var(--primary-color);
+    border-radius: 1rem;
+}
+.social img:hover {
+    background-color: var(--secondary-color);
+}

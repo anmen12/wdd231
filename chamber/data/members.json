@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "Little Caesars",
+            "address": "Bluffdale, 1st Street",
+            "phone": "(234) 567-8901",
+            "url": "https://littlecaesars.com/en-us/",
+            "image": "https://cdn.brandfetch.io/idPvg-ka_0/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667666204382",
+            "membership": 2
+        },
+        {
+            "name": "Wendy's",
+            "address": "Bluffdale, 2nd Street",
+            "phone": "(345) 678-9012",
+            "url": "https://www.wendys.com/",
+            "image": "https://cdn.brandfetch.io/idiMsuk2zA/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667829961260",
+            "membership": 1
+        },
+        {
+            "name": "Maverik",
+            "address": "Bluffdale, 3rd Street",
+            "phone": "(456) 789-0123",
+            "url": "https://maverik.com/about/",
+            "image": "https://cdn.brandfetch.io/idf93SJaRM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1689929442215",
+            "membership": 3
+        },
+        {
+            "name": "Swig",
+            "address": "Bluffdale, 4th Street",
+            "phone": "(567) 890-1234",
+            "url": "https://swig.com/",
+            "image": "https://cdn.brandfetch.io/id-ujRiPL3/w/1443/h/1443/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1772325986804",
+            "membership": 1
+        },
+        {
+            "name": "Smith's",
+            "address": "Bluffdale, 5th Street",
+            "phone": "(678) 901-2345",
+            "url": "https://www.smithsfoodanddrug.com/",
+            "image": "https://cdn.brandfetch.io/idRYbPBhEA/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1668079342588",
+            "membership": 2
+        },
+        {
+            "name": "The Nut Garden",
+            "address": "Bluffdale, 6th Street",
+            "phone": "(789) 012-3456",
+            "url": "https://thenutgarden.com/",
+            "image": "https://cdn.brandfetch.io/idOO7WHRNJ/w/386/h/218/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1774218280585",
+            "membership": 2
+        },
+        {
+            "name": "Costa Vida",
+            "address": "Bluffdale, 7th Street",
+            "phone": "(890) 123-4567",
+            "url": "https://www.costavida.com/",
+            "image": "https://cdn.brandfetch.io/id7YmRGu0T/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1778056244181",
+            "membership": 1
+        }
+    ]
+}
