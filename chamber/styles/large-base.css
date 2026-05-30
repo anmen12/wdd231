@@ -27,4 +27,17 @@
     footer .social {
         width: 320px;
     }
+
+    .home-info {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .weather > div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .business-spotlight {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }

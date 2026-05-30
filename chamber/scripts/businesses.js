@@ -21,7 +21,7 @@ async function apiFetch() {
         const response = await fetch("data/members.json");
         if(response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayBusinesses(data);
         } else {
             throw Error(await response.text());
