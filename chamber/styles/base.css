@@ -211,13 +211,13 @@ main div .selected {
     height: 100%;
 }
 
-/*------------- Join Button -------------*/
+/*------------- Join Link -------------*/
 .join {
     display: flex;
     justify-content: center;
     margin: 1rem 1rem 0 1rem;
 }
-.join a button {
+.join a {
     background-color: var(--background-color);
     border: solid 3px var(--primary-color);
     border-radius: 20px;
@@ -225,8 +225,9 @@ main div .selected {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-accent);
+    text-decoration: none;
 }
-.join a button:hover {
+.join a:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
     cursor: pointer;
