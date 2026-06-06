@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title, description, & author-->
+    <title>Bluffdale Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 Web Fronend Developement, chamber join page">
+    <meta name="author" content="Bryson Gowans">
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico">
+    <!--open graph tags-->
+    <meta property="og:title" content="Bluffdale Chamber of Commerce">
+    <meta property="og:description" content="Chamber join assignment for the course WDD 231 - Web Frontend Developement">
+    <meta property="og:image" content="https://anmen12.github.io/wdd231/chamber/images/hero-small.webp">
+    <meta property="og:url" content="https://anmen12.github.io/wdd231/chamber/join">
+    <!--styling-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/memberships.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo" width="80" height="80">
+        <span>Bluffdale Chamber of Commerce</span>
+        <button id="menu-button" class="menu" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="join-page">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <label for="fname">
+                    First Name<span class="required">*</span><input type="text" id="fname" name="fname" title="First Name" required>
+                </label>
+
+                <label for="lname">
+                    Last Name<span class="required">*</span><input type="text" id="lname" name="lname" title="Last Name" required>
+                </label>
+
+                <label for="title">
+                    Organization Title<span class="required">*</span><input type="text" pattern="[A-Za-z\s\x2D]{1,7}" id="title" name="title" title="Organization Title" required autocomplete="organization-title">
+                </label>
+
+                <label for="email">
+                    Email Address<span class="required">*</span><input type="email" id="email" name="email" title="Email" required autocomplete="email" placeholder="email@email.com">
+                </label>
+
+                <label for="phone">
+                    Phone Number<span class="required">*</span><input type="tel" id="phone" name="phone" title="Phone" required autocomplete="phone" placeholder="1234567890">
+                </label>
+
+                <label for="company">
+                    Organization Name<span class="required">*</span><input type="text" id="company" name="company" title="Organization Name" required autocomplete="organization">
+                </label>
+
+                <label for="membership">Membership Level<span class="required">*</span>
+                    <select id="membership" name="membership" title="Membership Level" required>
+                        <option value="" disabled selected>Select a Membership ...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">
+                    Organization Description<span class="required">*</span><textarea id="description" name="description" title="Description" required></textarea>
+                </label>
+
+                <label for="timestamp">
+                    <input type="hidden" id="timestamp" name="timestamp" title="Timestamp">
+                </label>
+
+                <input type="submit" value="Apply for Membership">
+            </fieldset>
+        </form>
+        <div id="memberships" class="memberships"></div>
+        <dialog id="membership-details">Learn More</dialog>
+    </main>
+    <footer>
+        <div>
+            <p class="bold">Bluffdale Chamber of Commerce</p>
+            <p>Bluffdale cc Street</p>
+            <p>Bluffdale, Mali 999</p>
+            <p>info@bluffdalecc.org</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com"><img src="images/github.svg" alt="Github" width="60" height="60"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn" width="60" height="60"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="images/microsoft-teams.svg" alt="Microsoft Temas" width="60" height="60"></a>
+            <a href="https://discord.com"><img src="images/discord.svg" alt="Discord" width="60" height="60"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Bryson Gowans</p>
+            <p>&copy;<span id="currentyear"></span> Bluffdale Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

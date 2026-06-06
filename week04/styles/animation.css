@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    background-color: #dddddd
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.loader img {
+    position: absolute;
+    background-color: transparent;
+}
+
+.gear {
+    animation: spin 1s linear 1s infinite normal both;
+}
+
+@keyframes spin {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}

@@ -122,6 +122,10 @@ function createCourseCards(courses) {
 
         card.appendChild(name);
 
+        card.addEventListener('click', () => {
+            displayModalDialog(course);
+        });
+
         document.querySelector("#card-grid").appendChild(card);
     });
     adjustCredits(courses)
@@ -140,3 +144,26 @@ function adjustCredits(courses) {
 
 //run function
 createCourseCards(courses);
+
+//modal dialog
+const modal = document.querySelector("#course-details");
+
+function displayModalDialog(course) {
+    modal.innerHTML = "";
+
+    modal.innerHTML = `
+        <button id="closeModal">&#120;</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    `;
+
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    });
+
+    modal.showModal();
+}
