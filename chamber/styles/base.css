@@ -256,6 +256,10 @@ main div .selected {
     text-align: center;
 }
 
+.join-page h1 {
+    grid-column: 1 / 3;
+}
+
 /*------------- Events -------------*/
 .events h3 {
     margin: 1rem;
@@ -369,7 +373,7 @@ input[type="submit"]:hover {
 
 .required {
     font-weight: 600;
-    color: red;
+    color: maroon;
 }
 
 /*------------- Memberships -------------*/

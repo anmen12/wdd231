@@ -28,6 +28,8 @@
     <script src="scripts/timestamp.js" defer></script>
     <script src="scripts/memberships.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <!--title-->
+    <title>Join the Bluffdale Chamber of Commerce</title>
 </head>
 <body>
     <header>
@@ -44,18 +46,19 @@
         </ul>
     </nav>
     <main class="join-page">
+        <h1>Join</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <label for="fname">
-                    First Name<span class="required">*</span><input type="text" id="fname" name="fname" title="First Name" required>
+                    First Name<span class="required">*</span><input type="text" id="fname" name="fname" title="First Name" required autocomplete="given-name">
                 </label>
 
                 <label for="lname">
-                    Last Name<span class="required">*</span><input type="text" id="lname" name="lname" title="Last Name" required>
+                    Last Name<span class="required">*</span><input type="text" id="lname" name="lname" title="Last Name" required autocomplete="family-name">
                 </label>
 
                 <label for="title">
-                    Organization Title<span class="required">*</span><input type="text" pattern="[A-Za-z\s\x2D]{1,7}" id="title" name="title" title="Organization Title" required autocomplete="organization-title">
+                    Organization Title<span class="required">*</span><input type="text" pattern="[A-Za-z\x20\x2D]{1,7}" id="title" name="title" title="Organization Title" required autocomplete="organization-title">
                 </label>
 
                 <label for="email">
@@ -63,7 +66,7 @@
                 </label>
 
                 <label for="phone">
-                    Phone Number<span class="required">*</span><input type="tel" id="phone" name="phone" title="Phone" required autocomplete="phone" placeholder="1234567890">
+                    Phone Number<span class="required">*</span><input type="tel" id="phone" name="phone" title="Phone" required autocomplete="tel-national" placeholder="1234567890">
                 </label>
 
                 <label for="company">
@@ -84,9 +87,7 @@
                     Organization Description<span class="required">*</span><textarea id="description" name="description" title="Description" required></textarea>
                 </label>
 
-                <label for="timestamp">
-                    <input type="hidden" id="timestamp" name="timestamp" title="Timestamp">
-                </label>
+                <input type="hidden" id="timestamp" name="timestamp" title="Timestamp">
 
                 <input type="submit" value="Apply for Membership">
             </fieldset>
