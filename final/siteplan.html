@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title, description, & author-->
+    <title>Final Siteplan</title>
+    <meta name="description" content="WDD 231 Web Frontend Developement course, final siteplan for the course">
+    <meta name="author" content="Bryson Gowans">
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico?">
+    <!--open graph tags-->
+    <meta name="og:title" content="WDD 231 - Final Siteplan">
+    <meta name="og:description" content="Final siteplan for the course WDD 231 - Web Frontend Developement">
+    <meta name="og:image" content="https://anmen12.github.io/wdd231/final/images/wide-wireframe.webp">
+    <meta name="og:url" content="https://anmen12.github.io/wdd231/final/siteplan.html">
+    <!--styling-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Trees of Utah</span>
+        <button id="menu-button" class="menu" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trees</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Siteplan</h1>
+        <section>
+            <h2>Site Name</h2>
+            <h3>Trees of Utah</h3>
+            <p>This name illustrates that the site will be about trees that can be found in Utah</p>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>This site will provide information about various trees that are found in Utah along with a form where questions can be asked</p>
+        </section>
+        <section>
+            <h2>Senerios</h2>
+            <h3>Q: What kinds of trees grow in Utah?</h3>
+            <h3>Q: How many different kinds of trees are in Utah?</h3>
+        </section>
+        <section class="color-scheme">
+            <h2>Color Scheme</h2>
+            <div class="background-color">
+                <h3>Background Color</h3>
+                <p>Main background color</p>
+            </div>
+            <div class="section-color">
+                <h3>Section Color</h3>
+                <p>Section background color</p>
+            </div>
+            <div class="primary-color">
+                <h3>Primary Color</h3>
+                <p>Heading & footer background color as well as some section headings & backgrounds color</p>
+            </div>
+            <div class="primary-accent">
+                <h3>Primary Accent</h3>
+                <p>Logo color, font color, and some line borders between page content</p>
+            </div>
+        </section>
+        <section>
+            <h2>Typography</h2>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <p>Paragraph</p>
+        </section>
+        <section class="wireframe">
+            <h2>Wireframe</h2>
+            <figure class="wide">
+                <img src="images/wide-wireframe.webp" alt="Wide Wireframe" width="1152" height="648">
+                <figcaption>Wide</figcaption>
+            </figure>
+            <figure class="mobile">
+                <img src="images/mobile-wireframe.webp" alt="Mobile Wireframe" width="576" height="972">
+                <figcaption>Mobile</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

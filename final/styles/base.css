@@ -1,0 +1,228 @@
+/*------------- Variables -------------*/
+:root {
+    --background-color: #f6fff0;
+    --section-color: #f9fff5;
+    --primary-color: #d4ecc7;
+    --primary-accent: #415039;
+}
+
+/*------------- Site Wide -------------*/
+* {
+    font-family: "Almendra", serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+header, nav, main, footer {
+    min-width: 300px;
+    margin: 0 auto;
+}
+main {
+    min-width: 270px;
+}
+
+/*------------- Header -------------*/
+header {
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    background-color: var(--primary-color);
+    border-bottom: solid 3px var(--primary-accent);
+}
+
+header img {
+    padding: .5rem;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+header span {
+    margin: .5rem;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+    text-align: center;
+}
+
+/*------------- Menu Button --------------*/
+.menu {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--primary-accent);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu::after {
+    content: "\2630";
+}
+.menu.show::after {
+    content: "\00D7";
+}
+
+/*------------- Nav -------------*/
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 3px var(--primary-accent);
+    text-align: center;
+}
+
+.navigation li.current {
+    background-color: var(--primary-accent);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+    text-decoration: none;
+}
+.navigation a:hover {
+    background-color: var(--background-color);
+}
+
+/*------------- Main -------------*/
+main {
+    margin: 0 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+    text-align: center;
+}
+
+main section {
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--section-color);
+    box-shadow: 0 2px 3px 2px rgb(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+}
+
+section h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+}
+
+section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+}
+
+/*------------- Siteplan -------------*/
+.color-scheme {
+    display: grid;
+}
+
+.color-scheme div {
+    padding: 1rem;
+    border-top: solid 1px var(--primary-accent);
+}
+
+.background-color {
+    background-color: var(--background-color);
+}
+
+.section-color {
+    background-color: var(--section-color);
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.primary-accent {
+    background-color: var(--primary-accent);
+}
+.primary-accent h3,
+.primary-accent p {
+    color: var(--background-color);
+}
+
+.wireframe {
+    display: flex;
+    flex-direction: column;
+}
+
+.wireframe figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.wireframe figure img {
+    box-shadow: 0 2px 3px 2px rgb(0,0,0,0.1);
+}
+
+.wide img {
+    width: 100%;
+    height: auto;
+}
+
+.mobile img {
+    width: 75%;
+    height: auto;
+}
+
+.wireframe figure figcaption {
+    margin-top: .25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+    text-align: center;
+}
+
+/*------------- Footer -------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-color);
+    border-top: solid 3px var(--primary-accent);
+    color: #ffffff;
+}
+
+footer p,
+footer a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+}
+
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
