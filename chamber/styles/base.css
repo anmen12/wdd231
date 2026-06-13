@@ -605,6 +605,90 @@ dialog p {
     color: var(--primary-accent);
 }
 
+/*------------- Discover -------------*/
+.last-visit {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+    text-align: center;
+}
+.last-visit .bold {
+    font-size: 1.25rem;
+}
+
+.areas {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.areas section {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "address"
+    "description"
+    "button";
+    justify-content: center;
+    background-color: var(--background-color);
+    border: solid 3px var(--primary-color);
+    border-radius: 20px;
+}
+
+.areas section h2 {
+    margin: 1rem;
+    grid-area: name;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+    text-align: center;
+}
+
+.areas section figure {
+    width: fit-content;
+    margin: auto;
+    grid-area: image;
+}
+
+.areas section figure img:hover {
+    filter: contrast(75%);
+    box-shadow: 0 0 5px 5px rgb(0,0,0,0.1);
+}
+
+.areas section address,
+.areas section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+    text-align: center;
+}
+.areas section address {
+    margin-top: .5rem;
+    grid-area: address;
+}
+.areas section p {
+    grid-area: description;
+}
+
+.areas section button {
+    width: fit-content;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    grid-area: button;
+    background-color: #ffffff;
+    border: solid 3px var(--primary-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-accent);
+}
+.areas section button:hover {
+    color: #ffffff;
+}
+
 /*------------- Footer -------------*/
 footer {
     display: flex;
