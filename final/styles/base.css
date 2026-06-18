@@ -21,9 +21,6 @@ header, nav, main, footer {
     min-width: 300px;
     margin: 0 auto;
 }
-main {
-    min-width: 270px;
-}
 
 /*------------- Header -------------*/
 header {
@@ -103,6 +100,7 @@ nav {
 
 /*------------- Main -------------*/
 main {
+    min-width: 270px;
     margin: 0 1rem;
 }
 
