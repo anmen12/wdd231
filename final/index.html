@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title, description, & author-->
+    <title>Trees of Utah</title>
+    <meta name="description" content="WDD 231 Web Frontend Developement course, final home page for the course">
+    <meta name="author" content="Bryson Gowans">
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico?">
+    <!--open graph tags-->
+    <meta name="og:title" content="Trees of Utah">
+    <meta name="og:description" content="Final home page for the course WDD 231 - Web Frontend Developement">
+    <meta name="og:image" content="https://anmen12.github.io/wdd231/final/images/hero-mobile-medium.webp">
+    <meta name="og:url" content="https://anmen12.github.io/wdd231/final/index">
+    <!--styling-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.mjs" type="module"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Trees of Utah</span>
+        <button id="menu-button" class="menu" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="trees.html">Trees</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture class="hero">
+            <source srcset="images/hero-wide-large.webp" width="2560" height="640" media="(min-width: 928px)">
+            <source srcset="images/hero-wide-medium.webp" width="1920" height="480" media="(min-width: 768px)">
+            <source srcset="images/hero-wide-small.webp" width="1280" height="320" media="(min-width: 608px)">
+            <source srcset="images/hero-mobile-large.webp" width="1000" height="750" media="(min-width: 448px)">
+            <img src="images/hero-mobile-medium.webp" alt="Hero Image" width="750" height="563" loading="lazy">
+        </picture>
+        <h1>Home</h1>
+        <section>
+            <h2>Site's Purpose</h2>
+            <p>The purpose of this site is to provide information about trees that can be found in Utah</p>
+        </section>
+        <div id="tree-cards"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

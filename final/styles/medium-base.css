@@ -1,0 +1,58 @@
+@media only screen and (min-width: 38rem) {
+    header span {
+        text-align: left;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    main h1 {
+        text-align: left;
+    }
+
+    .color-scheme {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .color-scheme h2 {
+        grid-column: 1 / 5;
+    }
+
+    .color-scheme div {
+        padding: 1rem;
+        border-top: none;
+        border-left: solid 1px var(--primary-accent);
+    }
+
+    #tree-info section {
+        grid-template-areas:
+        "image common"
+        "image scientific"
+        "image height"
+        "image button";
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    input[type="submit"]:hover {
+        animation: submit 1s linear 0s infinite;
+    }
+
+    @keyframes submit {
+        25% {
+            transform: rotateZ(1deg);
+        }
+        75% {
+            transform: rotateZ(-1deg);
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "trees": [
+        {
+            "commonName":"White Fir",
+            "scientificName":"Abies Concolor",
+            "type": [
+                "Trees",
+                "Conifers"
+            ],
+            "family":"Pinaceae",
+            "minHeight": 40,
+            "maxHeight": 70,
+            "imageURL":"images/white-fir.webp"
+        },
+        {
+            "commonName":"Western Rosebud",
+            "scientificName":"Cercis occidentalis",
+            "type": [
+                "Trees",
+                "Shrubs"
+            ],
+            "family":"Fabaceae",
+            "minHeight": 10,
+            "maxHeight": 15,
+            "imageURL":"images/western-rosebud.webp"
+        },
+        {
+            "commonName":"Eastern Cottonwood",
+            "scientificName":"Populus Deltoides",
+            "type": [
+                "Trees"
+            ],
+            "family":"Salicaceae",
+            "minHeight": 50,
+            "maxHeight": 80,
+            "imageURL":"images/eastern-cottonwood.webp"
+        },
+        {
+            "commonName":"Joshua Tree",
+            "scientificName":"Yucca Brevifolia",
+            "type": [
+                "Trees"
+            ],
+            "family":"Asparagaceae",
+            "minHeight": 15,
+            "maxHeight": 30,
+            "imageURL":"images/joshua-tree.webp"
+        },
+        {
+            "commonName":"Box Elder",
+            "scientificName":"Acer Negundo",
+            "type": [
+                "Trees"
+            ],
+            "family":"Sapindaceae",
+            "minHeight": 30,
+            "maxHeight": 50,
+            "imageURL":"images/box-elder.webp"
+        },
+        {
+            "commonName":"American Beech",
+            "scientificName":"Fagus Grandifolia",
+            "type": [
+                "Trees"
+            ],
+            "family":"Fagaceae",
+            "minHeight": 50,
+            "maxHeight": 80,
+            "imageURL":"images/american-beech.webp"
+        },
+        {
+            "commonName":"Green Ash",
+            "scientificName":"Fraxinus pennsylvanica",
+            "type": [
+                "Trees"
+            ],
+            "family":"Oleaceae",
+            "minHeight": 50,
+            "maxHeight": 70,
+            "imageURL":"images/green-ash.webp"
+        },
+        {
+            "commonName":"Osage Orange",
+            "scientificName":"Maclura pomifera",
+            "type": [
+                "Trees"
+            ],
+            "family":"Moraceae",
+            "minHeight": 30,
+            "maxHeight": 60,
+            "imageURL":"images/osage-orange.webp"
+        },
+        {
+            "commonName":"Engelmann Spruce",
+            "scientificName":"Picea Engelmannii",
+            "type": [
+                "Trees",
+                "Conifers"
+            ],
+            "family":"Pinaceae",
+            "minHeight": 70,
+            "maxHeight": 100,
+            "imageURL":"images/engelmann-spruce.webp"
+        },
+        {
+            "commonName":"Staghorn Sumac",
+            "scientificName":"Rhus Typhina",
+            "type": [
+                "Trees",
+                "Shrubs"
+            ],
+            "family":"Anacardiaceae",
+            "minHeight": 15,
+            "maxHeight": 25,
+            "imageURL":"images/staghorn-sumac.webp"
+        },
+        {
+            "commonName":"Hop Tree",
+            "scientificName":"Ptelea Trifoliata",
+            "type": [
+                "Trees",
+                "Shrubs"
+            ],
+            "family":"Rutaceae",
+            "minHeight": 15,
+            "maxHeight": 20,
+            "imageURL":"images/hop-tree.webp"
+        },
+        {
+            "commonName":"Chokecherry",
+            "scientificName":"Prunus Virginiana",
+            "type": [
+                "Trees",
+                "Shrubs"
+            ],
+            "family":"Rosaceae",
+            "minHeight": 20,
+            "maxHeight": 30,
+            "imageURL":"images/chokecherry.webp"
+        },
+        {
+            "commonName":"Quaking Aspen",
+            "scientificName":"Populus Tremuloides",
+            "type": [
+                "Trees"
+            ],
+            "family":"Salicaceae",
+            "minHeight": 20,
+            "maxHeight": 50,
+            "imageURL":"images/quaking-aspen.webp"
+        },
+        {
+            "commonName":"Pinyon Pine",
+            "scientificName":"Pinus Edulis",
+            "type": [
+                "Trees",
+                "Conifers"
+            ],
+            "family":"Pinaceae",
+            "minHeight": 10,
+            "maxHeight": 20,
+            "imageURL":"images/pinyon-pine.webp"
+        },
+        {
+            "commonName":"Arroyo Willow",
+            "scientificName":"Salix Lasiolepis",
+            "type": [
+                "Trees",
+                "Shrubs"
+            ],
+            "family":"Salicaceae",
+            "minHeight": 10,
+            "maxHeight": 35,
+            "imageURL":"images/arroyo-willow.webp"
+        }
+    ]
+}

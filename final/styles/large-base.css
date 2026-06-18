@@ -1,35 +1,7 @@
-@media only screen and (min-width: 38rem) {
-    header span {
-        text-align: left;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .navigation {
-        display: block;
-    }
-
-    .navigation ul {
-        display: flex;
-    }
-
-    main h1 {
-        text-align: left;
-    }
-
-    .color-scheme {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .color-scheme h2 {
-        grid-column: 1 / 5;
-    }
-
-    .color-scheme div {
-        padding: 1rem;
-        border-top: none;
-        border-left: solid 1px var(--primary-accent);
+@media only screen and (min-width: 64rem) {
+    #tree-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1rem;
     }
 }

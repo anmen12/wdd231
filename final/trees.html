@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title, description, & author-->
+    <title>Trees of Utah</title>
+    <meta name="description" content="WDD 231 Web Frontend Developement course, final trees page for the course">
+    <meta name="author" content="Bryson Gowans">
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico?">
+    <!--open graph tags-->
+    <meta name="og:title" content="Trees of Utah">
+    <meta name="og:description" content="Final trees page for the course WDD 231 - Web Frontend Developement">
+    <meta name="og:image" content="https://anmen12.github.io/wdd231/final/images/hero-mobile-medium.webp">
+    <meta name="og:url" content="https://anmen12.github.io/wdd231/final/trees">
+    <!--styling-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium-base.css">
+    <link rel="stylesheet" href="styles/large-base.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/trees.mjs" type="module"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Trees of Utah</span>
+        <button id="menu-button" class="menu" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="trees.html">Trees</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Trees</h1>
+        <section class="height-selection">
+            <h2>Tree Height <span class="label">(feet)</span></h2>
+            <div>
+                <button id="all-feet" class="selected">All</button>
+                <button id="link020">0 - 20</button>
+                <button id="link2040">20 - 40</button>
+                <button id="link4060">40 - 60</button>
+                <button id="link6080">60 - 80</button>
+                <button id="link80100">80 - 100</button>
+            </div>
+        </section>
+        <div id="tree-info"></div>
+        <dialog id="tree-details"></dialog>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <a href="attributions.html">Attributions</a>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
